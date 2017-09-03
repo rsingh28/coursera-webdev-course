@@ -21,8 +21,35 @@
 		/* Example of ID Selector*/
 		#greenStuff {
 			color: green;
-			text-align: right;
+			text-align: left;
 			font-style: Serif;
+		}
+
+		article > p {
+			color: blue;
+			text-align: center;
+			font-size: 25px;
+			font-style: italic;
+		}
+
+		/* Example of Combining Selectors*/
+		article a {
+			list-style: none;
+			display: block;
+			text-decoration: none;
+			background-color: yellow;
+			text-align: center;
+			width: 180px;
+			margin-bottom: 1px;
+			border: 1px solid red; 
+		}
+
+		a:hover{
+			background-color: red;
+		}
+
+		a:active{
+			background-color:purple;
 		}
 
 	</style>
@@ -31,13 +58,20 @@
 
 <body>
 
-<h1>Fun so far! Please be motivated </h1>
-<h2 class="redBold">This line is for the second push to GitHub</h2>
+<h1> Test Webpage </h1>
 <h3 id="greenStuff"> A list of links to some useful websites - </h3>
 <ol>
 	<li><a class="redBold" href="https://www.google.ca/?gfe_rd=cr&ei=2EunWaTSH_CfXsv5j-AN">Google</a></li>
 	<li><a id="greenStuff" href="https://www.yahoo.com/">Yahoo</a></li>
 </ol>
+<article>
+	<p>Know More About Me Here</p>
+	<div>
+		<a target="_blank" href="https://www.linkedin.com/in/rashmeet-singh-36899a104/">LinkedIn</a>
+		<a target="_blank" href="https://www.facebook.com/rashmeet.singh.376">Facebook</a>
+		<a target="_blank" href="https://github.com/rsingh28">GitHub</a>
+	</div>
+</article>
 </body>
 
 </html>
